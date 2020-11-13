@@ -1,4 +1,4 @@
-# CICE 6 Webapp Flexbox
+# CICE 6 Webapp Flex
 
 ![](./resources/I.png)
 ![](./resources/II.png)
