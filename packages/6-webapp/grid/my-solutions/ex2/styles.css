@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.aside {
+  display: grid;
+  grid-template-rows: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 25%;
+}

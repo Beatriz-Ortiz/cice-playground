@@ -1,0 +1,9 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
