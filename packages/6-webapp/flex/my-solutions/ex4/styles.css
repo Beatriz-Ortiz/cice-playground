@@ -1,0 +1,25 @@
+/* Holy grail */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+
+.box {
+  flex: 1;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+
+.middle .box:nth-of-type(2) {
+  flex: 2;
+}
