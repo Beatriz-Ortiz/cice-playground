@@ -8,11 +8,10 @@ const arrowFunction = () => {
 
 const arrowFunctionWithImplicitReturn = () => 42
 
-const arrowFunctionWithParameters = (a: number, b: number) => a + b
-const arrowFunctionWithSingleParameter = (a: number) => a
-const arrowFunctionWithSingleParameterAlternative: ArrowFunction = a => a
-
-type ArrowFunction = (a: number) => number
+const arrowFunctionWithParameters = (a, b) => a + b
+// prettier-ignore
+const arrowFunctionWithSingleParameter = (a) => a
+const arrowFunctionWithSingleParameterAlternative = a => a
 
 describe('arrow-function', () => {
   it('should execute properly', () => {
@@ -30,5 +29,17 @@ describe('arrow-function', () => {
     const actual = array.map(x => x ** 2)
 
     expect(actual).toEqual([1, 4, 9])
+  })
+
+  it('should have a lexical this', () => {
+    window.age = 10
+    function Person() {
+      this.age = 42
+      setTimeout(function () {
+        console.log('this.age', this.age)
+      }, 100)
+    }
+
+    const person = new Person()
   })
 })
