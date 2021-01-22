@@ -1,0 +1,13 @@
+import { LitElement, customElement, html, css } from 'lit-element'
+import { general } from './general'
+
+@customElement('todo-button')
+export class Button extends LitElement {
+  static get styles() {
+    return [general, css``]
+  }
+
+  render() {
+    return html`<button><slot></slot></button>`
+  }
+}
